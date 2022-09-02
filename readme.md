@@ -1,4 +1,4 @@
-## Youtube App
+## IMDB Backend
 
 Tech Used: Python, FastAPI and SQLite
 
