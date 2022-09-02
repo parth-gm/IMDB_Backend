@@ -1,0 +1,10 @@
+fastapi[all]
+uvicorn
+SQLAlchemy
+fastapi-utils
+fastapi-pagination
+requests
+email-validator
+PyJWT
+python-decouple
+passlib
