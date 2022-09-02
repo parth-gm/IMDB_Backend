@@ -116,9 +116,8 @@ async def get_movies(db: Session, filter_obj):
 
     if filter_obj.geners_filter:
         genre_obj_list = db.query(models.Genre).filter(
-            models.Genre.name in set(filter_obj.geners_filter)).all()
-        results = results.filter(models.Movies.id in set(
-            gobj.movie_id for gobj in genre_obj_list))
+            models.Genre.name.in_(filter_obj.geners_filter.split(","))).all()
+        results = results.filter(models.MoviesGenre.genre_id.in_(set(gobj.id for gobj in genre_obj_list)))
 
     if filter_obj.ord_by_rating_desc:
         results = results.order_by(models.Movies.imdb_score)

@@ -20,9 +20,9 @@ class Movies(BaseModel):
 class MovieFilter(BaseModel):
     name_contains: str = None
     director_name_contains: str = None
-    imdb_rat_gt_than_eq: int = 5
-    pop_gt_than_eq: int = 0
-    geners_filter: list = []
+    imdb_rat_gt_than_eq: float = 5
+    pop_gt_than_eq: float = 0
+    geners_filter: str = None
     ord_by_rating_desc: bool = True
 
 
