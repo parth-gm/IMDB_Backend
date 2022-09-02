@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 from routes.api import router as api_router
 
-app = FastAPI()
+app = FastAPI(title="IMDB_Backend", description="Apis for Search/CRUD Operations on Movies")
 
 app.include_router(api_router)
 
