@@ -24,6 +24,9 @@ pip install --upgrade pip
     - algorithm = Token Algo
 - `docker run  -p 8005:8005 -v {Absolute_Project_Path}/storage:/code/storage --env-file ./.env imdb_backend`
 
+#### System Design Doc
+- https://docs.google.com/document/d/1WxuHID-po01HBq10rL5x2b0faqobDzMIWirCPDi6Cfk
+
 #### API doc
 - Go to Swagger Doc at http://0.0.0.0:8005/docs#
 
